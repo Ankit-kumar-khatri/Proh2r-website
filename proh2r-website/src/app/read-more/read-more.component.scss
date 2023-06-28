@@ -1,0 +1,29 @@
+/*--------------------------------------------------------------
+# Schedule Demo
+--------------------------------------------------------------*/
+
+.schedule-demo{
+    background: url("../../assets/image/schedule-demo-bg.png") ;
+    background-size: cover;
+    width: 100%;
+  }
+  
+  .schedule-demo a.demo-btn{
+    background: #2453A2;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .schedule-demo a.demo-btn:hover {
+    background: #164085;
+    color: #fff;
+  }
+  
+  .schedule-demo .SD-left-content{
+    color: #000;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  .schedule-demo .SD-left-content h2, p{
+    margin-bottom: 6px;
+  }

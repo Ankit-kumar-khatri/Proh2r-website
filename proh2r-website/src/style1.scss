@@ -1,0 +1,245 @@
+// ----Carousel dots css---------
+
+.slick-dots li button:before {
+  color: white !important;
+}
+.slick-dots {
+  bottom: -15px !important;
+}
+
+// -------About Mobile Carousel Design-----------
+#mobile_design {
+  .slick-dots {
+    bottom: -50px !important;
+  }
+  .slick-dots li button:before {
+    color: black !important;
+  }
+  .slick-list {
+    padding-top: 46px !important;
+    height: 506px;
+  }
+  // .carousel .slick-list .slick-track .slick-current {
+  //   transition: transform 1s;
+  //   transform: scale(1.1);
+  //   img {
+  //     opacity: 1 !important;
+  //   }
+  // }
+  // .slick-current{
+  //   opacity: 0.2;
+  // }
+  // .carousel .slick-list .slick-track .slick-active:nth-child(2n+2) {
+  //   .opacity_handle {
+  //     opacity: 1 ;
+  //   }
+  // }
+
+  // This is for to active only center img
+  .slick-center img {
+    transition: transform 1s;
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+.opacity_handle {
+  opacity: 0.2;
+  // &:nth-child(3) {
+  //   opacity: 1;
+  // }
+}
+// .opacity_handle:nth-of-type(3) {
+//   opacity: 1;
+// }
+
+// -------About Mobile Carousel Design Ends-----------
+
+/*--------------------------------------------------------------
+# Schedule Demo
+--------------------------------------------------------------*/
+.schedule-demo{
+  position: relative;
+}
+
+.schedule-demo::before {
+  content: "";
+  background: url("/assets/image/schedule-demo-bg.png");
+  // background-size: cover;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.schedule-demo a.demo-btn {
+  background: #2453a2;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.schedule-demo a.demo-btn:hover {
+  background: #164085;
+  color: #fff;
+}
+.schedule-demo a.demo-btn1 {
+  background: #fff;
+  color: #2453a2;
+  border: 2px solid #2453a2;
+  padding: 10px 20px;
+}
+
+// .schedule-demo a.demo-btn1:hover {
+//   background: #164085;
+//   color: #fff;
+// }
+
+.schedule-demo .SD-left-content {
+  color: #000;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.schedule-demo .SD-left-content h2,
+p {
+  margin-bottom: 6px;
+}
+
+// -----------Payroll design css-------------
+.payroll_nav {
+  .navbar-nav {
+    .active {
+      color: #2453a2 !important;
+      border: 1px solid #2453a2;
+      border-radius: 10px;
+    }
+    .nav-link {
+      margin-right: 10px !important;
+      padding: 7px 20px !important;
+      height: min-content;
+    }
+  }
+}
+.payroll_bdy_img, .help_desk_img {
+  background: var(--check);
+  --check: #f3f7fc;
+}
+.payroll_testimonials {
+  background: var(--check);
+  --check: #f3f7fc;
+}
+
+.hr-software_testimonials, .employee-profile_testimonials, .documents-page-testimonal{
+  background: var(--check);
+  --check: #f3f7fc;
+}
+
+.box {
+  background-color: #fbfcff;
+  border: 2px dotted #e5ebf6;
+  padding: 20px 20px;
+}
+.text_ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+// .schedule-demo {
+//   background-size: contain !important;
+// }
+.SD-left-content {
+  h1 {
+    font-weight: 300 !important;
+  }
+}
+
+// ---------Products navbar design--------
+.prd {
+  li {
+    img {
+      margin-right: 10px;
+    }
+  }
+}
+
+.leave-management-category{
+  background: #f3f7fc;
+}
+
+.leave-management-category h2{
+  font-size: 24px ;
+}
+
+.leave-management-category .card{
+  padding: 24px;
+  text-align: center;
+  min-height: 200px;
+
+}
+
+
+#navbarSupportedContent .dropdown .innovation-dd li a h4 {
+  color: #000;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+#navbarSupportedContent .dropdown  ul.innovation-dd li a p{
+  color: #838890;
+    font-weight: 300;
+    margin: 0 0 0 0px;
+}
+
+// -------------Global container css--------------
+@media (min-width: 1400px) {
+  .container{
+    max-width: 1140px !important;
+  }
+}
+
+// ---------Home page Spinner css-------
+.spinner__loading{
+  .ngx-spinner-overlay{
+    position: relative !important;
+  }
+}
+
+
+// --------------Custom hr in footer----------
+
+.hr_footer {
+  margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  border-top: 1px solid gray;
+  opacity: 0.25;
+}
+
+
+// -------------Footer grid css---------------
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 30px;
+  padding: 10px;
+  
+  .main_head{
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .content{
+    color: black;
+    font-size: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+}
+
+// ----------lets talk home page button -------------
+
+#talk_header_btn{
+  display: flex !important;
+  width: 92%;
+}

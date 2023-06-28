@@ -1,0 +1,30 @@
+.our-company-value .box {
+    background-color: #fbfcff;
+    border: 2px dotted #e5ebf6;
+    padding: 20px 20px;
+}
+
+.our-company-value .box p {
+    margin: 0px;
+}
+
+.our-company-value .container h2 {
+    font-size: 22px;
+}
+.our-company-value .OCV-left-details p {
+    color: #434343;
+    font-size: 16px;
+}
+
+.OCV-left-details h1 span {
+    color: #2453a2;
+}
+
+#mobile_design{
+    .slick-dots{
+        bottom: -45px !important;
+    }
+    .slick-dots li button:before{
+        color: black !important;
+    }
+}

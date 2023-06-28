@@ -1,0 +1,21 @@
+<!-- ----Leave Management Navbar---------- -->
+<section class="payroll_nav p-0">
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">Leave Management</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" routerLinkActive="active" aria-current="page" [routerLink]="['/leave-management/leave-homepage']">Customized Leave Management</a>
+          <a class="nav-link" [routerLink]="['/leave-management/leave-grant']" routerLinkActive="active">Leave Grant</a>
+          <a class="nav-link" [routerLink]="['/leave-management/leave-dashboard']" routerLinkActive="active">Leave Dashboard</a>
+        </div>
+      </div>
+    </div> 
+  </nav>
+</section>
+<!-- -----------Leave Management Navbar ends------------- -->
+<router-outlet></router-outlet>

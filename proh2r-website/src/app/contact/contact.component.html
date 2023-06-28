@@ -1,0 +1,260 @@
+
+
+<main id="main">
+
+    <!-- ======= Our Experts ======= -->
+
+    <section id="why-us" class="why-us">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+
+            <div class="section-title">
+                <!-- <h2>Why Us</h2> -->
+                <p>Talk to <span>Our Experts</span> Today </p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-3">
+                    <div class="box aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+                        <img class="our-expert-ic" src="assets/image/ic_grade-security.png" height="80px">
+                        <h4>Trying to reach your Sales Team</h4>
+                        <!-- <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p> -->
+                        <a class="round-btn" href="#contact"><i class="bi bi-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 mt-4 mt-lg-0">
+                    <div class="box aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
+                        <img class="our-expert-ic" src="assets/image/ic_implementation.png" height="80px">
+                        <h4>Looking to schedule a demo</h4>
+                        <!-- <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p> -->
+                        <a class="round-btn" href="#contact"><i class="bi bi-chevron-right"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 mt-4 mt-lg-0">
+                    <div class="box aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300">
+                        <img class="our-expert-ic" src="assets/image/ic_mobile-experience.png" height="80px">
+                        <h4> An existing customer looking for support</h4>
+                        <!-- <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p> -->
+                        <a class="round-btn" href="#contact"><i class="bi bi-chevron-right"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 mt-4 mt-lg-0">
+                    <div class="box aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300">
+                        <img class="our-expert-ic" src="assets/image/ic_scalable.png" height="80px">
+                        <h4> Looking to schedule a demo</h4>
+                        <!-- <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p> -->
+                        <a class="round-btn" href="#contact"><i class="bi bi-chevron-right"></i></a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- ======= Our Experts ======= -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+        <div class="container" data-aos="zoom-in">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <h3 class="text-body clients-h3">Top enterprises trust us as we deliver..</h3>
+                </div>
+                <div class="col-lg-9">
+                    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+                        <div ngxSlickItem *ngFor="let slide of slides" class="slide ms-5">
+                          <img src="{{ slide.img }}" alt="" width="100%" class="d-block img-fluid">
+                        </div>
+                      </ngx-slick-carousel>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Clients Section -->
+
+    <section id="contact" class="contact ">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+            <div class="row mt-5">
+                <div class="col-lg-5 mt-5 mt-lg-0">
+                    <div class="contact-form">
+                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                            <div class="row">
+                                <div class="col-md-12 form-group">
+                                    <input type="text" name="name" class="form-control" id="name"
+                                        placeholder="Your Name" required="">
+                                </div>
+                                <div class="col-md-12 form-group mt-3">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Your Email" required="">
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="text" class="form-control" name="subject" id="subject"
+                                    placeholder="Subject" required="">
+                            </div>
+                            <div class="form-group mt-3">
+                                <textarea class="form-control" name="message" rows="8" placeholder="Message"
+                                    required=""></textarea>
+                            </div>
+                            <div class="my-3">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                            </div>
+                            <div class="text-center"><button type="submit">Send Message</button></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-7 info-1 position-relative">
+                    <div class="info">
+                        <div class="row pb-5">
+                            <div class="col-lg-6">
+                                <div class="address text-center">
+                                    <img class="our-expert-ic" src="assets/image/ic_growth.png" height="80px">
+                                    <h4>90%</h4>
+                                    <p>of customers recommend the ProH2R<br> experience to their peers</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 text-center">
+                                <div class="">
+                                    <img class="our-expert-ic" src="assets/image/ic_leave-management.png" height="80px">
+                                    <h4>10 M+</h4>
+                                    <p>
+                                        Customer Leaves
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-lg-6">
+                                <div class="address text-center">
+                                    <img class="our-expert-ic" src="assets/image/ic_implementation.png" height="80px">
+                                    <h4>100 K+</h4>
+                                    <p>Operating vacancies</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="text-center">
+                                    <img class="our-expert-ic" src="assets/image/ic_active-users.png" height="80px">
+                                    <h4>25 K+</h4>
+                                    <p>
+                                        Active Users
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg-1 position-relative">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-4 align-items-center d-flex">
+                    <div class="section-title">
+                        <span>Customer Voice</span>
+                        <h3> They love us.<br /> You will too</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 d-flex align-items-center justify-content-center">
+                    <div class="devider-testimonial">
+                        <div class="divider-coma-bg">
+                            <img src="assets/image/coma.png" height="40px">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="testimonial-item align-items-center d-flex">
+                                    <div>
+                                        <div class="testimonial-user-details d-flex align-items-center">
+                                            <img src="assets/image/testimonials/testimonials-1.jpg"
+                                                class="testimonial-img" alt="">
+                                            <div class="align-items-center">
+                                                <h3>Saul Goodman</h3>
+                                                <h4>Ceo &amp; Founder</h4>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
+                                            suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.
+                                            Maecen aliquam, risus at semper.
+                                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                        </p>
+                                        <p class="date-testimonials">
+                                            13 Fec 2023
+                                        </p>
+                                    </div>
+                                </div>
+                            </div><!-- End testimonial item -->
+
+                            <div class="swiper-slide">
+                                <div class="testimonial-item align-items-center d-flex">
+                                    <div>
+                                        <div class="testimonial-user-details d-flex align-items-center">
+                                            <img src="assets/image/testimonials/testimonials-2.jpg"
+                                                class="testimonial-img" alt="">
+                                            <div class="align-items-center">
+                                                <h3>Sara Wilsson</h3>
+                                                <h4>Designer</h4>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                            Export tempor illum tamen malis malis eram quae irure esse labore quem
+                                            cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua
+                                            noster fugiat irure amet legam anim culpa.
+                                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div><!-- End testimonial item -->
+
+                            <div class="swiper-slide">
+                                <div class="testimonial-item align-items-center d-flex">
+                                    <div>
+                                        <div class="testimonial-user-details d-flex align-items-center">
+                                            <img src="assets/image/testimonials/testimonials-3.jpg"
+                                                class="testimonial-img" alt="">
+                                            <div class="align-items-center">
+                                                <h3>Jena Karlis</h3>
+                                                <h4>Store Owner</h4>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                            Export tempor illum tamen malis malis eram quae irure esse labore quem
+                                            cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua
+                                            noster fugiat irure amet legam anim culpa.
+                                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div><!-- End testimonial item -->
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Testimonials Section -->
+
+</main><!-- End #main -->
+
+

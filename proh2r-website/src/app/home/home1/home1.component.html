@@ -1,0 +1,831 @@
+<!-- <p>home works!</p> -->
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+  <div class="container-fluid position-relative text-center text-lg-start">
+    <div class="row">
+      <div class="col-lg-6 d-flex align-items-center justify-content-center hero-left-section flex-column">
+
+        <!-- ----------Ngx spinner html--------- -->
+        <div>
+          <div class="spinner__loading" *ngIf="!this.spinnerShow">
+            <ngx-spinner type="ball-clip-rotate-multiple" size="medium" [fullScreen]="false" color="#2453a2"
+              bdColor="transparent" [zIndex]="99" name="spinnerData"></ngx-spinner>
+          </div>
+        </div>
+        
+        <!-- Add Owl Carousel -->
+        <div class="owl-carousel owl-theme" #carouselElement *ngIf="this.spinnerShow">
+          <div class="item">
+            <h1>
+              Modern <span> HR Software</span> for the modern organizational
+              workforce
+            </h1>
+            <h2>
+              Still doing HR functions manually? ProH2R software will blow your
+              mind away
+            </h2>
+          </div>
+          <div class="item">
+            <h1>Peace of mind is just a few clicks away</h1>
+            <h2>
+              Supercharge your HR team and empower your people with powerful HR
+              software
+            </h2>
+          </div>
+        </div><br>
+        <div class="btns" id="talk_header_btn" *ngIf="this.spinnerShow">
+          <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Lets Talk</a>
+        </div>
+
+        <!-- <ng-template> -->
+        <!-- <div class="swiper">
+            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig_main">
+              <div ngxSlickItem class="slide">
+                <div class="swiper-slide">
+                  <div class="">
+                    <h1>Modern <span> HR Software</span> for the modern organizational workforce</h1>
+                    <h2>Still doing HR functions manually? ProH2R software will blow your mind away</h2>
+                    <div class="btns">
+                      <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Lets Talk</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div ngxSlickItem class="slide">
+                <div class="swiper-slide">
+                  <div class="">
+                    <h1>Peace of mind is just a few clicks away</h1>
+                    <h2>Supercharge your HR team and empower your people with powerful HR software</h2>
+                    <div class="btns">
+                      <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Lets Talk</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ngx-slick-carousel>
+          </div> -->
+      </div>
+      <div class="col-lg-6 d-flex align-items-center justify-content-center position-relative px-0">
+        <div class="banner-img">
+          <div class="banner-module">
+            <img src="assets/image/Banner-modules.png" width="90%" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Hero -->
+
+<!-- ======= Clients Section ======= -->
+<section id="clients" class="clients">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-3">
+        <h3 class="text-body clients-h3">
+          Top Enterprises Trust Us As We Deliver…
+        </h3>
+      </div>
+      <div class="col-lg-9">
+        <!-- <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/image/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/image/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/image/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/image/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/image/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/image/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/image/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/image/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div> -->
+
+        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+          <div ngxSlickItem *ngFor="let slide of slides" class="slide ms-5">
+            <img src="{{ slide.img }}" alt="" height="50px" class="d-block" />
+          </div>
+        </ngx-slick-carousel>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Clients Section -->
+
+<!-- ======= why-ProH2R Section ======= ---------------------------------------------------------->
+
+<!-- ======= Menu Section ======= -->
+<div id="modules" class="modules section-bg">
+  <section id="why-proh2r" class="why-proh2r position-relative">
+    <div class="container-fluid p-0">
+      <div class="tab-bg">
+        <div class="section-title">
+          <!-- <h2>Specials</h2> -->
+          <p>
+            Why ProH2R is the preferred HRMS of growing organizations in India?
+          </p>
+        </div>
+
+        <div class="">
+          <div class="d-flex justify-content-center">
+            <ul id="modules-flters">
+              <li *ngFor="let menu of menuSection" (click)="filterMenu(menu)"
+                [ngClass]="{ 'filter-active': menu.isActive }">
+                {{ menu.viewValue }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row modules-container">
+        <div class="col-lg-12 modules-item" *ngIf="filterMenuSectionList === 'People Management'">
+          <div class="row">
+            <div class="col-lg-3">
+              <ul class="nav nav-tabs flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1"><img
+                      src="assets/image/ic-dashboard.png" width="50px" class="me-3" />Dashboards</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-2"><img src="assets/image/ic_grade-security.png"
+                      width="50px" class="me-3" />Employee Database & Profiles</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-3"><img src="assets/image/ic_custom-user-role.png"
+                      width="50px" class="me-3" />Custom User Roles</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-4"><img
+                      src="assets/image/ic_rule-configurator.png" width="50px" class="me-3" />Rule Configurators</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-5"><img
+                      src="assets/image/ic_assets-management.png" width="50px" class="me-3" />Asset Management</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-9 mt-4 mt-lg-0">
+              <div class="tab-content">
+                <div class="tab-pane active show" id="tab-1">
+                  <div class="row aos-init aos-animate">
+                    <div class="col-lg-7 details order-2 order-lg-1">
+                      <h3>Dashboards</h3>
+                      <p class="">
+                        Between managing the fires around your business or
+                        having to track all of that paperwork, HR can be a
+                        really demanding career. With people management you get
+                        everything that you and your team needs to succeed.
+                      </p>
+                    </div>
+                    <div class="col-lg-5 text-center order-1 order-lg-2">
+                      <img src="assets/image/desktop.png" alt="" class="img-fluid" />
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-2">
+                  <div class="row">
+                    <div class="col-lg-7 details order-2 order-lg-1">
+                      <h3>Employee Database & Profiles</h3>
+                      <p class="">
+                        Qui laudantium consequatur laborum sit qui ad sapiente
+                        dila parde sonata raqer a videna mareta paulona marka
+                      </p>
+                      <p>
+                        Ea ipsum voluptatem consequatur quis est. Illum error
+                        ullam omnis quia et reiciendis sunt sunt est. Non
+                        aliquid repellendus itaque accusamus eius et velit ipsa
+                        voluptates. Optio nesciunt eaque beatae accusamus lerode
+                        pakto madirna desera vafle de nideran pal
+                      </p>
+                      <a class="read-more" (click)="goReadSection()">Read More</a>
+                    </div>
+                    <div class="col-lg-5 text-center order-1 order-lg-2">
+                      <img src="assets/image/desktop.png" alt="" class="img-fluid" />
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-3">
+                  <div class="row">
+                    <div class="col-lg-7 details order-2 order-lg-1">
+                      <h3>Custom User Roles</h3>
+                      <p class="">
+                        Eos voluptatibus quo. Odio similique illum id quidem non
+                        enim fuga. Qui natus non sunt dicta dolor et. In
+                        asperiores velit quaerat perferendis aut
+                      </p>
+                      <p>
+                        Iure officiis odit rerum. Harum sequi eum illum corrupti
+                        culpa veritatis quisquam. Neque necessitatibus illo
+                        rerum eum ut. Commodi ipsam minima molestiae sed
+                        laboriosam a iste odio. Earum odit nesciunt fugiat sit
+                        ullam. Soluta et harum voluptatem optio quae
+                      </p>
+                      <a class="read-more" (click)="goReadSection()">Read More</a>
+                    </div>
+                    <div class="col-lg-5 text-center order-1 order-lg-2">
+                      <img src="assets/image/desktop.png" alt="" class="img-fluid" />
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-4">
+                  <div class="row">
+                    <div class="col-lg-7 details order-2 order-lg-1">
+                      <h3>Rule Configurators</h3>
+                      <p class="">
+                        Totam aperiam accusamus. Repellat consequuntur iure
+                        voluptas iure porro quis delectus
+                      </p>
+                      <p>
+                        Eaque consequuntur consequuntur libero expedita in
+                        voluptas. Nostrum ipsam necessitatibus aliquam fugiat
+                        debitis quis velit. Eum ex maxime error in consequatur
+                        corporis atque. Eligendi asperiores sed qui veritatis
+                        aperiam quia a laborum inventore
+                      </p>
+                      <a class="read-more" (click)="goReadSection()">Read More</a>
+                    </div>
+                    <div class="col-lg-5 text-center order-1 order-lg-2">
+                      <img src="assets/image/desktop.png" alt="" class="img-fluid" />
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-5">
+                  <div class="row">
+                    <div class="col-lg-7 details order-2 order-lg-1">
+                      <h3>Asset Management</h3>
+                      <p class="">
+                        Omnis blanditiis saepe eos autem qui sunt debitis porro
+                        quia.
+                      </p>
+                      <p>
+                        Exercitationem nostrum omnis. Ut reiciendis repudiandae
+                        minus. Omnis recusandae ut non quam ut quod eius qui.
+                        Ipsum quia odit vero atque qui quibusdam amet. Occaecati
+                        sed est sint aut vitae molestiae voluptate vel
+                      </p>
+                      <a class="read-more" (click)="goReadSection()">Read More</a>
+                    </div>
+                    <div class="col-lg-5 text-center order-1 order-lg-2">
+                      <img src="assets/image/desktop.png" alt="" class="img-fluid" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12 modules-item filter-dashboard" *ngIf="filterMenuSectionList === 'Culture'">
+          <div class="row">
+            <div class="col-lg-3">
+              <ul class="nav nav-tabs flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1"><img
+                      src="assets/image/ic_scalable.png" width="50px" class="me-3" />
+                    Culture</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-9 mt-4 mt-lg-0">
+              <div class="tab-content">
+                <div class="tab-pane active show" id="tab-1">
+                  <div class="row aos-init aos-animate">
+                    <div class="col-lg-7 details order-2 order-lg-1">
+                      <h3>Culture</h3>
+                      <p class="">
+                        Just like your company thrives when your people care
+                        about your customer, similarily your culture thrives
+                        when your employees know they are cared for by you.
+                      </p>
+                      <p>
+                        Create a culture of high performance teams and see your
+                        business scale.
+                      </p>
+                      <!-- <a class="read-more" (click)="goReadSection()">Read More</a> -->
+                    </div>
+                    <div class="col-lg-5 text-center order-1 order-lg-2">
+                      <img src="assets/image/desktop.png" alt="" class="img-fluid" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 modules-item filter-Employee-Onboarding"
+          *ngIf="filterMenuSectionList === 'Payroll & Compliance'">
+          <div class="row">
+            <div class="col-lg-3">
+              <ul class="nav nav-tabs flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1"><img
+                      src="assets/image/ic_scalable.png" width="50px" class="me-1" />
+                    Payroll Processing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-2"><img src="assets/image/ic_grade-security.png"
+                      width="50px" class="me-1" />Statutory Reporting</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-9 mt-4 mt-lg-0">
+              <div class="tab-content">
+                <div class="tab-pane active show" id="tab-1">
+                  <div class="row aos-init aos-animate">
+                    <div class="col-lg-7 details order-2 order-lg-1">
+                      <h3>Payroll Processing</h3>
+                      <p class="">
+                        Automate and pay employees on time and stay compliant.
+                        All remotely
+                      </p>
+                    </div>
+                    <div class="col-lg-5 text-center order-1 order-lg-2">
+                      <img src="assets/image/desktop.png" alt="" class="img-fluid" />
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-2">
+                  <div class="row">
+                    <div class="col-lg-7 details order-2 order-lg-1">
+                      <h3>Statutory Reporting</h3>
+                      <p class="">
+                        Qui laudantium consequatur laborum sit qui ad sapiente
+                        dila parde sonata raqer a videna mareta paulona marka
+                      </p>
+                      <p>
+                        Ea ipsum voluptatem consequatur quis est. Illum error
+                        ullam omnis quia et reiciendis sunt sunt est. Non
+                        aliquid repellendus itaque accusamus eius et velit ipsa
+                        voluptates. Optio nesciunt eaque beatae accusamus lerode
+                        pakto madirna desera vafle de nideran pal
+                      </p>
+                      <a class="read-more" (click)="goReadSection()">Read More</a>
+                    </div>
+                    <div class="col-lg-5 text-center order-1 order-lg-2">
+                      <img src="assets/image/desktop.png" alt="" class="img-fluid" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 modules-item filter-payroll" *ngIf="filterMenuSectionList === 'Talent Management'">
+          <div class="row">
+            <div class="col-lg-3">
+              <ul class="nav nav-tabs flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1"><img
+                      src="assets/image/ic_scalable.png" width="50px" class="me-1" />Job Posting
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-2"><img src="assets/image/ic_grade-security.png"
+                      width="50px" class="me-1" />Rule based recruiter assigment</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-3"><img
+                      src="assets/image/ic_mobile-experience.png" width="50px" class="me-1" />Candidate Pool and
+                    Sourcing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-4"><img src="assets/image/ic_implementation.png"
+                      width="50px" class="me-1" />Interview and Offer Letter generation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-5"><img src="assets/image/ic_implementation.png"
+                      width="50px" class="me-1" />Onboarding
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-9 mt-4 mt-lg-0">
+              <div class="tab-content">
+                <div class="tab-pane active show" id="tab-1">
+                  <div class="row aos-init aos-animate">
+                    <div class="col-lg-7 details order-2 order-lg-1">
+                      <h3>Job Posting</h3>
+                      <p class="">
+                        Attract the right talent for right positions and deliver
+                        a seamless hiring and onboarding experience
+                      </p>
+                    </div>
+                    <div class="col-lg-5 text-center order-1 order-lg-2">
+                      <img src="assets/image/desktop.png" alt="" class="img-fluid" />
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-2">
+                  <div class="row">
+                    <div class="col-lg-7 details order-2 order-lg-1">
+                      <h3>Rule based recruiter assigment</h3>
+                      <p class="">
+                        Qui laudantium consequatur laborum sit qui ad sapiente
+                        dila parde sonata raqer a videna mareta paulona marka
+                      </p>
+                      <p>
+                        Ea ipsum voluptatem consequatur quis est. Illum error
+                        ullam omnis quia et reiciendis sunt sunt est. Non
+                        aliquid repellendus itaque accusamus eius et velit ipsa
+                        voluptates. Optio nesciunt eaque beatae accusamus lerode
+                        pakto madirna desera vafle de nideran pal
+                      </p>
+                      <a class="read-more" (click)="goReadSection()">Read More</a>
+                    </div>
+                    <div class="col-lg-5 text-center order-1 order-lg-2">
+                      <img src="assets/image/desktop.png" alt="" class="img-fluid" />
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-3">
+                  <div class="row">
+                    <div class="col-lg-7 details order-2 order-lg-1">
+                      <h3>Candidate Pool and Sourcing</h3>
+                      <p class="">
+                        Eos voluptatibus quo. Odio similique illum id quidem non
+                        enim fuga. Qui natus non sunt dicta dolor et. In
+                        asperiores velit quaerat perferendis aut
+                      </p>
+                      <p>
+                        Iure officiis odit rerum. Harum sequi eum illum corrupti
+                        culpa veritatis quisquam. Neque necessitatibus illo
+                        rerum eum ut. Commodi ipsam minima molestiae sed
+                        laboriosam a iste odio. Earum odit nesciunt fugiat sit
+                        ullam. Soluta et harum voluptatem optio quae
+                      </p>
+                      <a class="read-more" (click)="goReadSection()">Read More</a>
+                    </div>
+                    <div class="col-lg-5 text-center order-1 order-lg-2">
+                      <img src="assets/image/desktop.png" alt="" class="img-fluid" />
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-4">
+                  <div class="row">
+                    <div class="col-lg-7 details order-2 order-lg-1">
+                      <h3>Interview and Offer Letter generation</h3>
+                      <p class="">
+                        Totam aperiam accusamus. Repellat consequuntur iure
+                        voluptas iure porro quis delectus
+                      </p>
+                      <p>
+                        Eaque consequuntur consequuntur libero expedita in
+                        voluptas. Nostrum ipsam necessitatibus aliquam fugiat
+                        debitis quis velit. Eum ex maxime error in consequatur
+                        corporis atque. Eligendi asperiores sed qui veritatis
+                        aperiam quia a laborum inventore
+                      </p>
+                      <a class="read-more" (click)="goReadSection()">Read More</a>
+                    </div>
+                    <div class="col-lg-5 text-center order-1 order-lg-2">
+                      <img src="assets/image/desktop.png" alt="" class="img-fluid" />
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-5">
+                  <div class="row">
+                    <div class="col-lg-7 details order-2 order-lg-1">
+                      <h3>Onboarding</h3>
+                      <p class="">
+                        Omnis blanditiis saepe eos autem qui sunt debitis porro
+                        quia.
+                      </p>
+                      <p>
+                        Exercitationem nostrum omnis. Ut reiciendis repudiandae
+                        minus. Omnis recusandae ut non quam ut quod eius qui.
+                        Ipsum quia odit vero atque qui quibusdam amet. Occaecati
+                        sed est sint aut vitae molestiae voluptate vel
+                      </p>
+                    </div>
+                    <div class="col-lg-5 text-center order-1 order-lg-2">
+                      <img src="assets/image/desktop.png" alt="" class="img-fluid" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- End Modules Section -->
+
+<!-- ======= Menu Section ======= -->
+<div id="modules" class="modules section-bg" style="background-color: #f3f7fc">
+  <div class="container-fluid p-0">
+    <div class="">
+      <div class="section-title">
+        <!-- <h2>Menu</h2> -->
+        <p>Everything you need to create a high performance culture</p>
+      </div>
+    </div>
+  </div>
+  <div class="container py-5">
+    <div class="row modules-container mb-4 justify-content-center">
+      <div class="col-12 col-md-4">
+        <div class="card p-3">
+          <div class="home_card_img">
+            <img src="assets\image\ic_modern-HR.png" width="65" />
+          </div>
+          <div class="home_card_text mt-3">
+            <h4>Core HR</h4>
+            <p class="text-muted">
+              All your people information in one place to create a connected
+              digital workplace
+            </p>
+          </div>
+          <div class="home_card_button">
+            <button class="p-0" (click)="goDifferentSection('modernHr')">
+              Learn More<i class="fa fa-long-arrow-right right-move" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card p-3">
+          <div class="home_card_img">
+            <img src="assets\image\hiring-onboarding.png" width="65" />
+          </div>
+          <div class="home_card_text mt-3">
+            <h4>Hiring & Onboarding</h4>
+            <p class="text-muted">
+              An integrated hiring platform to collaborate with recruiters and
+              hire good talent
+            </p>
+          </div>
+          <div class="home_card_button">
+            <button class="p-0" (click)="goDifferentSection('hiringOnboard')">
+              Learn More<i class="fa fa-long-arrow-right right-move" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card p-3">
+          <div class="home_card_img">
+            <img src="assets\image\ic_attendance.png" width="65" />
+          </div>
+          <div class="home_card_text mt-3">
+            <h4>Time & Attendance</h4>
+            <p class="text-muted">
+              Track your employee time effectively and compensate on time while
+              working remotely
+            </p>
+          </div>
+          <div class="home_card_button">
+            <button class="p-0" (click)="goDifferentSection('attendance')">
+              Learn More<i class="fa fa-long-arrow-right right-move" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row modules-container justify-content-center">
+      <div class="col-12 col-md-4">
+        <div class="card p-3">
+          <div class="home_card_img">
+            <img src="assets\image\ic_leave-management.png" width="65" />
+          </div>
+          <div class="home_card_text mt-3">
+            <h4>Leave Management</h4>
+            <p class="text-muted">
+              Take a leave from managing leaves. Configure and set up leave
+              policy as per your organization culture, business goals, locations
+              etc.
+            </p>
+          </div>
+          <div class="home_card_button">
+            <button class="p-0" (click)="goDifferentSection('leave')">
+              Learn More<i class="fa fa-long-arrow-right right-move" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card p-3">
+          <div class="home_card_img">
+            <img src="assets\image\ic_timesheet.png" width="65" />
+          </div>
+          <div class="home_card_text mt-3">
+            <h4>Project timesheet</h4>
+            <p class="text-muted">
+              Track your employee time and maintain effective utilization to
+              grow your services business
+            </p>
+          </div>
+          <div class="home_card_button">
+            <button class="p-0" (click)="goDifferentSection('timesheet')">
+              Learn More<i class="fa fa-long-arrow-right right-move" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card p-3">
+          <div class="home_card_img">
+            <img src="assets\image\ic-expense-management.png" width="65" />
+          </div>
+          <div class="home_card_text mt-3">
+            <h4>Payroll & Expenses</h4>
+            <p class="text-muted">
+              Our industry redefining payroll system automates your payroll and
+              saves time for everyone
+            </p>
+          </div>
+          <div class="home_card_button">
+            <button class="p-0" (click)="goDifferentSection('payroll')">
+              Learn More<i class="fa fa-long-arrow-right right-move" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Modules Section -->
+
+<!-- ======= Android-Ios Section ======= -->
+<section id="android-ios" class="android-ios">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 order-1 order-lg-2">
+        <div class="android-ios-img">
+          <img src="assets/image/mobile-app-graphic.png" alt="" />
+        </div>
+      </div>
+      <div class="col-lg-7 pt-4 pt-lg-0 order-2 order-lg-1 content text-dark">
+        <h3 class="mb-4">
+          Mobility for<span> iOS</span> and <span>Android</span>
+        </h3>
+
+        <ul>
+          <li>
+            <i class="bi bi-check-circle"></i> We are not far from the day when all the employee interactions would happen on mobile phones. 
+          </li>
+        </ul>
+        <p>
+          The Employee Self-Service components of an HRMS allows employees to easily complete their tasks like marking attendance, applying for leave, feeling and submitting timesheet etc. With ProH2R MobileApp all this can be done from mobile device.
+        </p>
+        <div class="home_card_button position-relative top-0">
+          <button class="p-0" (click)="goDifferentSection('mobile')">
+            Learn More<i class="fa fa-long-arrow-right right-move" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="mt-5">
+          <a class="me-3" href=""><img src="assets/image/apple-store-btn.png" height="50px" />
+          </a>
+          <a href=""><img src="assets/image/google-play-btn.png" height="50px" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End About Section -->
+
+<!-- ======= Testimonials Section ======= -->
+<section id="testimonials" class="testimonials section-bg-1 position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 align-items-center d-flex">
+        <div class="section-title">
+          <span>Customer Voice</span>
+          <h3>
+            They love us.<br />
+            You will too
+          </h3>
+        </div>
+      </div>
+      <div class="col-lg-3 d-flex align-items-center justify-content-center">
+        <div class="devider-testimonial">
+          <div class="divider-coma-bg">
+            <img src="assets/image/coma.png" height="40px" />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="testimonials-slider swiper">
+          <!-- <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item align-items-center d-flex">
+                <div>
+                  <div class="testimonial-user-details d-flex align-items-center">
+                    <img src="assets/image/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                    <div class="align-items-center ">
+                      <h3>Saul Goodman</h3>
+                      <h4>Ceo &amp; Founder</h4>
+                    </div>
+                  </div>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
+                    Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <p class="date-testimonials">
+                    13 Fec 2023
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item align-items-center d-flex">
+                <div>
+                  <div class="testimonial-user-details d-flex align-items-center">
+                    <img src="assets/image/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                    <div class="align-items-center">
+                      <h3>Sara Wilsson</h3>
+                      <h4>Designer</h4>
+                    </div>
+                  </div>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
+                    quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item align-items-center d-flex">
+                <div>
+                  <div class="testimonial-user-details d-flex align-items-center">
+                    <img src="assets/image/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                    <div class="align-items-center">
+                      <h3>Jena Karlis</h3>
+                      <h4>Store Owner</h4>
+                    </div>
+                  </div>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
+                    quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div> -->
+
+          <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig1">
+            <div ngxSlickItem *ngFor="let test of testimonials" class="slide">
+              <div class="swiper-slide">
+                <div class="testimonial-item d-flex flex-column">
+                  <div class="testimonial-user-details d-flex align-items-center">
+                    <img src="{{ test.img }}" alt="" width="100%" class="d-block img-fluid testimonial-img" />
+                    <div class="align-items-center">
+                      <h3>{{ test.name }}</h3>
+                      <h4>{{ test.designation }}</h4>
+                    </div>
+                  </div>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>{{ test.content
+                    }}<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <p class="date-testimonials">
+                    {{ test.date }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </ngx-slick-carousel>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Testimonials Section -->
+
+<!-- ======= Schedule demo Section ======= -->
+<section id="schedule-demo" class="schedule-demo">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 d-flex align-items-center">
+        <img src="assets/image/watch.png" height="120px" />
+        <div class="SD-left-content">
+          <h2>Ready to try <span>ProH2R</span>?</h2>
+          <p>7 days. No strings attached. No credit card required.</p>
+        </div>
+      </div>
+      <div class="col-lg-6 d-flex align-items-center justify-content-center">
+        <a class="demo-btn" href="#">Schedule a demo</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Schedule demo Section -->
+
+<!-- <app-contact></app-contact> -->

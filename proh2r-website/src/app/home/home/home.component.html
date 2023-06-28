@@ -1,0 +1,857 @@
+<!-- <p>home works!</p> -->
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+  <div class="container-fluid position-relative text-center text-lg-start">
+    <div class="row">
+      <div class="col-lg-6 d-flex align-items-center justify-content-center hero-left-section">
+        <div class="">
+          <h1>Modern <span> HR Software</span> for the modern Indian workforce</h1>
+          <h2>Need-to-Know Information Delivered in an Easy-to-Understand Way</h2>
+
+          <div class="btns">
+            <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Lets Talk</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 d-flex align-items-center justify-content-center position-relative px-0">
+        <div class="banner-img">
+          <div class="banner-module">
+            <img src="assets/image/Banner-modules.png" width="90%">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- End Hero -->
+
+<!-- ======= Clients Section ======= -->
+<section id="clients" class="clients">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-lg-3">
+        <h3 class="text-body clients-h3">Top enterprises trust us as we deliver..</h3>
+      </div>
+      <div class="col-lg-9">
+        <!-- <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/image/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/image/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/image/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/image/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/image/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/image/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/image/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/image/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div> -->
+
+        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+          <div ngxSlickItem *ngFor="let slide of slides" class="slide ms-5">
+            <img src="{{ slide.img }}" alt="" width="100%" class="d-block img-fluid">
+          </div>
+        </ngx-slick-carousel>
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+</section><!-- End Clients Section -->
+
+
+
+<!-- ======= why-ProH2R Section ======= -->
+<section id="why-proh2r" class="why-proh2r position-relative">
+  <div class="container-fluid">
+
+    <div class="section-title">
+      <!-- <h2>Specials</h2> -->
+      <p>Why <span>ProH2R</span> is the preferred <span>HRMS</span> of growing organizations in India?</p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-3">
+        <ul class="nav nav-tabs flex-column">
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1"><img src="assets/image/ic_scalable.png"
+                width="50px" class="me-1"> Scalable and Agile Architecture</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-2"><img src="assets/image/ic_grade-security.png"
+                width="50px" class="me-1">Enterprise-grade Security</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-3"><img src="assets/image/ic_mobile-experience.png"
+                width="50px" class="me-1">Mobile-first Employee Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-4"><img src="assets/image/ic_implementation.png"
+                width="50px" class="me-1">Proven Implementation Methodology</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-5"><img src="assets/img/ic_scalable.png" width="50px"> Iusto ut expedita aut</a>
+          </li> -->
+        </ul>
+      </div>
+      <div class="col-lg-9 mt-4 mt-lg-0">
+        <div class="tab-content">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row aos-init aos-animate">
+              <div class="col-lg-7 details order-2 order-lg-1">
+                <h3>Scalable and Agile Architecture</h3>
+                <p class="">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna
+                  mareta paulona marka</p>
+                <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit
+                  magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil.
+                  Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                <a class="read-more" (click)="goReadSection()">Read More</a>
+              </div>
+              <div class="col-lg-5 text-center order-1 order-lg-2">
+                <img src="assets/image/desktop.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-7 details order-2 order-lg-1">
+                <h3>Et blanditiis nemo veritatis excepturi</h3>
+                <p class="">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna
+                  mareta paulona marka</p>
+                <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est.
+                  Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae
+                  accusamus lerode pakto madirna desera vafle de nideran pal</p>
+                <a class="read-more" (click)="goReadSection()">Read More</a>
+
+              </div>
+              <div class="col-lg-5 text-center order-1 order-lg-2">
+                <img src="assets/image/desktop.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-7 details order-2 order-lg-1">
+                <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
+                <p class="">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta
+                  dolor et. In asperiores velit quaerat perferendis aut</p>
+                <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque
+                  necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum
+                  odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+                <a class="read-more" (click)="goReadSection()">Read More</a>
+
+              </div>
+              <div class="col-lg-5 text-center order-1 order-lg-2">
+                <img src="assets/image/desktop.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-4">
+            <div class="row">
+              <div class="col-lg-7 details order-2 order-lg-1">
+                <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
+                <p class="">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
+                <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam
+                  fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed
+                  qui veritatis aperiam quia a laborum inventore</p>
+                <a class="read-more" (click)="goReadSection()">Read More</a>
+
+              </div>
+              <div class="col-lg-5 text-center order-1 order-lg-2">
+                <img src="assets/image/desktop.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-5">
+            <div class="row">
+              <div class="col-lg-8 details order-2 order-lg-1">
+                <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                <p class="">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod
+                  eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae
+                  voluptate vel</p>
+                <a class="read-more" (click)="goReadSection()">Read More</a>
+
+              </div>
+              <div class="col-lg-4 text-center order-1 order-lg-2">
+                <!-- <img src="assets/image/specials-5.png" alt="" class="img-fluid"> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ======= why-ProH2R Section ======= -->
+
+<!-- ======= Menu Section ======= -->
+<div id="modules" class="modules section-bg">
+  <section id="why-proh2r" class="why-proh2r position-relative">
+  <div class="container-fluid p-0">
+    <div class="tab-bg">
+      <div class="section-title">
+        <!-- <h2>Specials</h2> -->
+        <p>Why <span>ProH2R</span> is the preferred <span>HRMS</span> of growing organizations in India?</p>
+      </div>
+
+      <div class="">
+        <div class=" d-flex justify-content-center">
+          <ul id="modules-flters">
+            <li *ngFor="let menu of menuSection" (click)="filterMenu(menu);"
+              [ngClass]="{'filter-active':menu.isActive}">{{menu.viewValue}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row modules-container">
+      <div class="col-lg-12 modules-item" *ngIf="filterMenuSectionList==='People Management'">
+        
+    <div class="row">
+      <div class="col-lg-3">
+        <ul class="nav nav-tabs flex-column">
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1"><img src="assets/image/ic_scalable.png"
+                width="50px" class="me-1"> Scalable and Agile Architecture</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-2"><img src="assets/image/ic_grade-security.png"
+                width="50px" class="me-1">Enterprise-grade Security</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-3"><img src="assets/image/ic_mobile-experience.png"
+                width="50px" class="me-1">Mobile-first Employee Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-4"><img src="assets/image/ic_implementation.png"
+                width="50px" class="me-1">Proven Implementation Methodology</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-5"><img src="assets/img/ic_scalable.png" width="50px"> Iusto ut expedita aut</a>
+          </li> -->
+        </ul>
+      </div>
+      <div class="col-lg-9 mt-4 mt-lg-0">
+        <div class="tab-content">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row aos-init aos-animate">
+              <div class="col-lg-7 details order-2 order-lg-1">
+                <h3>Scalable and Agile Architecture</h3>
+                <p class="">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna
+                  mareta paulona marka</p>
+                <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit
+                  magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil.
+                  Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                <a class="read-more" (click)="goReadSection()">Read More</a>
+              </div>
+              <div class="col-lg-5 text-center order-1 order-lg-2">
+                <img src="assets/image/desktop.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-7 details order-2 order-lg-1">
+                <h3>Et blanditiis nemo veritatis excepturi</h3>
+                <p class="">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna
+                  mareta paulona marka</p>
+                <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est.
+                  Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae
+                  accusamus lerode pakto madirna desera vafle de nideran pal</p>
+                <a class="read-more" (click)="goReadSection()">Read More</a>
+
+              </div>
+              <div class="col-lg-5 text-center order-1 order-lg-2">
+                <img src="assets/image/desktop.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-7 details order-2 order-lg-1">
+                <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
+                <p class="">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta
+                  dolor et. In asperiores velit quaerat perferendis aut</p>
+                <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque
+                  necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum
+                  odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+                <a class="read-more" (click)="goReadSection()">Read More</a>
+
+              </div>
+              <div class="col-lg-5 text-center order-1 order-lg-2">
+                <img src="assets/image/desktop.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-4">
+            <div class="row">
+              <div class="col-lg-7 details order-2 order-lg-1">
+                <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
+                <p class="">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
+                <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam
+                  fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed
+                  qui veritatis aperiam quia a laborum inventore</p>
+                <a class="read-more" (click)="goReadSection()">Read More</a>
+
+              </div>
+              <div class="col-lg-5 text-center order-1 order-lg-2">
+                <img src="assets/image/desktop.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-5">
+            <div class="row">
+              <div class="col-lg-8 details order-2 order-lg-1">
+                <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                <p class="">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod
+                  eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae
+                  voluptate vel</p>
+                <a class="read-more" (click)="goReadSection()">Read More</a>
+
+              </div>
+              <div class="col-lg-4 text-center order-1 order-lg-2">
+                <!-- <img src="assets/image/specials-5.png" alt="" class="img-fluid"> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+
+      <div class="col-lg-12 modules-item filter-dashboard" *ngIf="filterMenuSectionList==='Culture'">
+        
+    <div class="row">
+      <div class="col-lg-3">
+        <ul class="nav nav-tabs flex-column">
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1"><img src="assets/image/ic_scalable.png"
+                width="50px" class="me-1"> Scalable and Agile Architecture</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-2"><img src="assets/image/ic_grade-security.png"
+                width="50px" class="me-1">Enterprise-grade Security</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-3"><img src="assets/image/ic_mobile-experience.png"
+                width="50px" class="me-1">Mobile-first Employee Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-4"><img src="assets/image/ic_implementation.png"
+                width="50px" class="me-1">Proven Implementation Methodology</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-5"><img src="assets/img/ic_scalable.png" width="50px"> Iusto ut expedita aut</a>
+          </li> -->
+        </ul>
+      </div>
+      <div class="col-lg-9 mt-4 mt-lg-0">
+        <div class="tab-content">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row aos-init aos-animate">
+              <div class="col-lg-7 details order-2 order-lg-1">
+                <h3>Scalable and Agile Architecture</h3>
+                <p class="">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna
+                  mareta paulona marka</p>
+                <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit
+                  magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil.
+                  Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                <a class="read-more" (click)="goReadSection()">Read More</a>
+              </div>
+              <div class="col-lg-5 text-center order-1 order-lg-2">
+                <img src="assets/image/desktop.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-7 details order-2 order-lg-1">
+                <h3>Et blanditiis nemo veritatis excepturi</h3>
+                <p class="">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna
+                  mareta paulona marka</p>
+                <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est.
+                  Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae
+                  accusamus lerode pakto madirna desera vafle de nideran pal</p>
+                <a class="read-more" (click)="goReadSection()">Read More</a>
+
+              </div>
+              <div class="col-lg-5 text-center order-1 order-lg-2">
+                <img src="assets/image/desktop.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-7 details order-2 order-lg-1">
+                <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
+                <p class="">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta
+                  dolor et. In asperiores velit quaerat perferendis aut</p>
+                <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque
+                  necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum
+                  odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+                <a class="read-more" (click)="goReadSection()">Read More</a>
+
+              </div>
+              <div class="col-lg-5 text-center order-1 order-lg-2">
+                <img src="assets/image/desktop.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-4">
+            <div class="row">
+              <div class="col-lg-7 details order-2 order-lg-1">
+                <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
+                <p class="">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
+                <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam
+                  fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed
+                  qui veritatis aperiam quia a laborum inventore</p>
+                <a class="read-more" (click)="goReadSection()">Read More</a>
+
+              </div>
+              <div class="col-lg-5 text-center order-1 order-lg-2">
+                <img src="assets/image/desktop.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-5">
+            <div class="row">
+              <div class="col-lg-8 details order-2 order-lg-1">
+                <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                <p class="">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod
+                  eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae
+                  voluptate vel</p>
+                <a class="read-more" (click)="goReadSection()">Read More</a>
+
+              </div>
+              <div class="col-lg-4 text-center order-1 order-lg-2">
+                <!-- <img src="assets/image/specials-5.png" alt="" class="img-fluid"> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+      <div class="col-lg-12 modules-item filter-Employee-Onboarding"
+        *ngIf="filterMenuSectionList==='Payroll & Compliance'">
+        
+    <div class="row">
+      <div class="col-lg-3">
+        <ul class="nav nav-tabs flex-column">
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1"><img src="assets/image/ic_scalable.png"
+                width="50px" class="me-1"> Scalable and Agile Architecture</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-2"><img src="assets/image/ic_grade-security.png"
+                width="50px" class="me-1">Enterprise-grade Security</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-3"><img src="assets/image/ic_mobile-experience.png"
+                width="50px" class="me-1">Mobile-first Employee Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-4"><img src="assets/image/ic_implementation.png"
+                width="50px" class="me-1">Proven Implementation Methodology</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-5"><img src="assets/img/ic_scalable.png" width="50px"> Iusto ut expedita aut</a>
+          </li> -->
+        </ul>
+      </div>
+      <div class="col-lg-9 mt-4 mt-lg-0">
+        <div class="tab-content">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row aos-init aos-animate">
+              <div class="col-lg-7 details order-2 order-lg-1">
+                <h3>Scalable and Agile Architecture</h3>
+                <p class="">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna
+                  mareta paulona marka</p>
+                <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit
+                  magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil.
+                  Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                <a class="read-more" (click)="goReadSection()">Read More</a>
+              </div>
+              <div class="col-lg-5 text-center order-1 order-lg-2">
+                <img src="assets/image/desktop.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-7 details order-2 order-lg-1">
+                <h3>Et blanditiis nemo veritatis excepturi</h3>
+                <p class="">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna
+                  mareta paulona marka</p>
+                <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est.
+                  Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae
+                  accusamus lerode pakto madirna desera vafle de nideran pal</p>
+                <a class="read-more" (click)="goReadSection()">Read More</a>
+
+              </div>
+              <div class="col-lg-5 text-center order-1 order-lg-2">
+                <img src="assets/image/desktop.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-7 details order-2 order-lg-1">
+                <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
+                <p class="">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta
+                  dolor et. In asperiores velit quaerat perferendis aut</p>
+                <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque
+                  necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum
+                  odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+                <a class="read-more" (click)="goReadSection()">Read More</a>
+
+              </div>
+              <div class="col-lg-5 text-center order-1 order-lg-2">
+                <img src="assets/image/desktop.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-4">
+            <div class="row">
+              <div class="col-lg-7 details order-2 order-lg-1">
+                <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
+                <p class="">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
+                <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam
+                  fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed
+                  qui veritatis aperiam quia a laborum inventore</p>
+                <a class="read-more" (click)="goReadSection()">Read More</a>
+
+              </div>
+              <div class="col-lg-5 text-center order-1 order-lg-2">
+                <img src="assets/image/desktop.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-5">
+            <div class="row">
+              <div class="col-lg-8 details order-2 order-lg-1">
+                <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                <p class="">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod
+                  eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae
+                  voluptate vel</p>
+                <a class="read-more" (click)="goReadSection()">Read More</a>
+
+              </div>
+              <div class="col-lg-4 text-center order-1 order-lg-2">
+                <!-- <img src="assets/image/specials-5.png" alt="" class="img-fluid"> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+      <div class="col-lg-12 modules-item filter-payroll" *ngIf="filterMenuSectionList==='Talent Management'">
+        
+    <div class="row">
+      <div class="col-lg-3">
+        <ul class="nav nav-tabs flex-column">
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1"><img src="assets/image/ic_scalable.png"
+                width="50px" class="me-1"> Scalable and Agile Architecture</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-2"><img src="assets/image/ic_grade-security.png"
+                width="50px" class="me-1">Enterprise-grade Security</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-3"><img src="assets/image/ic_mobile-experience.png"
+                width="50px" class="me-1">Mobile-first Employee Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-4"><img src="assets/image/ic_implementation.png"
+                width="50px" class="me-1">Proven Implementation Methodology</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-5"><img src="assets/img/ic_scalable.png" width="50px"> Iusto ut expedita aut</a>
+          </li> -->
+        </ul>
+      </div>
+      <div class="col-lg-9 mt-4 mt-lg-0">
+        <div class="tab-content">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row aos-init aos-animate">
+              <div class="col-lg-7 details order-2 order-lg-1">
+                <h3>Scalable and Agile Architecture</h3>
+                <p class="">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna
+                  mareta paulona marka</p>
+                <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit
+                  magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil.
+                  Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                <a class="read-more" (click)="goReadSection()">Read More</a>
+              </div>
+              <div class="col-lg-5 text-center order-1 order-lg-2">
+                <img src="assets/image/desktop.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-7 details order-2 order-lg-1">
+                <h3>Et blanditiis nemo veritatis excepturi</h3>
+                <p class="">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna
+                  mareta paulona marka</p>
+                <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est.
+                  Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae
+                  accusamus lerode pakto madirna desera vafle de nideran pal</p>
+                <a class="read-more" (click)="goReadSection()">Read More</a>
+
+              </div>
+              <div class="col-lg-5 text-center order-1 order-lg-2">
+                <img src="assets/image/desktop.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-7 details order-2 order-lg-1">
+                <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
+                <p class="">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta
+                  dolor et. In asperiores velit quaerat perferendis aut</p>
+                <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque
+                  necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum
+                  odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+                <a class="read-more" (click)="goReadSection()">Read More</a>
+
+              </div>
+              <div class="col-lg-5 text-center order-1 order-lg-2">
+                <img src="assets/image/desktop.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-4">
+            <div class="row">
+              <div class="col-lg-7 details order-2 order-lg-1">
+                <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
+                <p class="">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
+                <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam
+                  fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed
+                  qui veritatis aperiam quia a laborum inventore</p>
+                <a class="read-more" (click)="goReadSection()">Read More</a>
+
+              </div>
+              <div class="col-lg-5 text-center order-1 order-lg-2">
+                <img src="assets/image/desktop.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-5">
+            <div class="row">
+              <div class="col-lg-8 details order-2 order-lg-1">
+                <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                <p class="">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod
+                  eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae
+                  voluptate vel</p>
+                <a class="read-more" (click)="goReadSection()">Read More</a>
+
+              </div>
+              <div class="col-lg-4 text-center order-1 order-lg-2">
+                <!-- <img src="assets/image/specials-5.png" alt="" class="img-fluid"> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+<!-- End Modules Section -->
+
+
+<!-- ======= Android-Ios Section ======= -->
+<section id="android-ios" class="android-ios">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-lg-5 order-1 order-lg-2">
+        <div class="android-ios-img">
+          <img src="assets/image/mobile-app-graphic.png" alt="">
+        </div>
+      </div>
+      <div class="col-lg-7 pt-4 pt-lg-0 order-2 order-lg-1 content text-dark">
+        <h3 class="mb-4">Mobility for<span> iOS</span> and <span>Android</span></h3>
+
+        <ul>
+          <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+          <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+          <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.
+          </li>
+        </ul>
+        <p>
+          Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum
+        </p>
+        <div class="mt-5">
+          <a class="me-3" href=""><img src="assets/image/apple-store-btn.png" height="50px"> </a>
+          <a href=""><img src="assets/image/google-play-btn.png" height="50px"> </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- End About Section -->
+
+
+<!-- ======= Testimonials Section ======= -->
+<section id="testimonials" class="testimonials section-bg-1 position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 align-items-center d-flex">
+        <div class="section-title">
+          <span>Customer Voice</span>
+          <h3> They love us.<br /> You will too</h3>
+        </div>
+      </div>
+      <div class="col-lg-3 d-flex align-items-center justify-content-center">
+        <div class="devider-testimonial">
+          <div class="divider-coma-bg">
+            <img src="assets/image/coma.png" height="40px">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="testimonials-slider swiper">
+          <!-- <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item align-items-center d-flex">
+                <div>
+                  <div class="testimonial-user-details d-flex align-items-center">
+                    <img src="assets/image/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                    <div class="align-items-center">
+                      <h3>Saul Goodman</h3>
+                      <h4>Ceo &amp; Founder</h4>
+                    </div>
+                  </div>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
+                    Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <p class="date-testimonials">
+                    13 Fec 2023
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item align-items-center d-flex">
+                <div>
+                  <div class="testimonial-user-details d-flex align-items-center">
+                    <img src="assets/image/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                    <div class="align-items-center">
+                      <h3>Sara Wilsson</h3>
+                      <h4>Designer</h4>
+                    </div>
+                  </div>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
+                    quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item align-items-center d-flex">
+                <div>
+                  <div class="testimonial-user-details d-flex align-items-center">
+                    <img src="assets/image/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                    <div class="align-items-center">
+                      <h3>Jena Karlis</h3>
+                      <h4>Store Owner</h4>
+                    </div>
+                  </div>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
+                    quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div> -->
+
+          <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig1">
+            <div ngxSlickItem *ngFor="let test of testimonials" class="slide">
+              <div class="swiper-slide">
+                <div class="testimonial-item d-flex flex-column">
+                  <div class="testimonial-user-details d-flex align-items-center">
+                    <img src="{{ test.img }}" alt="" width="100%" class="d-block img-fluid testimonial-img">
+                    <div class="align-items-center">
+                      <h3>{{test.name}}</h3>
+                      <h4>{{test.designation}}</h4>
+                    </div>
+                  </div>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>{{test.content}}<i
+                      class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <p class="date-testimonials">
+                    {{test.date}}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </ngx-slick-carousel>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Testimonials Section -->
+
+
+<!-- ======= Schedule demo Section ======= -->
+<section id="schedule-demo" class="schedule-demo">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 d-flex align-items-center">
+        <img src="assets/image/watch.png" height="120px">
+        <div class="SD-left-content">
+          <h2>Ready to try <span>ProH2R</span>?</h2>
+          <p>7 days. No strings attached. No credit card required.</p>
+        </div>
+      </div>
+      <div class="col-lg-6 d-flex align-items-center justify-content-center">
+        <a class="demo-btn" href="#">Schedule a demo</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Schedule demo Section -->
+
+<!-- <app-contact></app-contact> -->
