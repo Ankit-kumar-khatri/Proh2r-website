@@ -56,6 +56,7 @@ git clone https://github.com/<your-github-username>/Proh2r-website
 
 ```bash
 cd Proh2r-website
+cd proh2r-website
 ```
 
 **5.** Run the below given command to install the node modules for the application for the first time.
