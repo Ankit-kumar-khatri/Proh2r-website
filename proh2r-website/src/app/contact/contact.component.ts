@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { RouteInfoService } from '../service/route-info.service';
 
 @Component({
   selector: 'app-contact',
@@ -24,7 +26,16 @@ export class ContactComponent implements OnInit {
     autoplaySpeed: 1500,
   };
 
-  constructor() {}
+  routeLink: any;
+  constructor(private route: ActivatedRoute, private routeService: RouteInfoService) {
+    route.url.subscribe(res => {
+      this.routeLink = res[0].path
+    })
+    routeService.setUrl(this.routeLink)
 
-  ngOnInit(): void {}
+  }
+
+  ngOnInit(): void {
+
+  }
 }

@@ -250,7 +250,7 @@
                 ><span>Company</span> <i class="bi bi-chevron-down"></i
               ></a>
               <ul>
-                <li><a href="#">About us</a></li>
+                <li><a href="/about">About us</a></li>
                 <li><a href="#">Careers</a></li>
                 <li><a href="#">Our Brand</a></li>
               </ul>
@@ -267,11 +267,18 @@
       </div>
     </nav>
 
-    <a
+    <a *ngIf="url!='contact'"
       class="book-a-table-btn scrollto d-none d-lg-flex"
       (click)="goToContact()"
       >Get Started</a
+      
     >
+    <a *ngIf="url=='contact'"
+    class="book-a-table-btn scrollto d-none d-lg-flex"
+    (click)="goToContact()"
+    >Talk On WhatsApp</a
+    
+  >
   </div>
 </header>
 <!-- End Header -->
@@ -426,8 +433,8 @@
       </div>
       <div class="col-lg-6">
         <div class="terms-privacy">
-          <a href="#">Terms of Use</a> |
-          <a href="#">Privacy Policy</a>
+          <a href="/terms-of-use">Terms of Use</a> |
+          <a href="/privacy-policy">Privacy Policy</a>
         </div>
       </div>
     </div>

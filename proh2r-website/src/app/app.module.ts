@@ -8,6 +8,8 @@ import { ReadMoreComponent } from './read-more/read-more.component';
 import { AboutComponent } from './about/about.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { TermsOfUseComponent } from './terms-of-use/terms-of-use.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     ContactComponent,
     ReadMoreComponent,
     AboutComponent,
+    TermsOfUseComponent,
+    PrivacyPolicyComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, SlickCarouselModule, NgxSpinnerModule,BrowserAnimationsModule],
   providers: [],

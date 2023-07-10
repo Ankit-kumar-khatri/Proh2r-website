@@ -563,7 +563,7 @@ h6 {
 }
 
 .why-us .box h4 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
   padding: 0;
   margin: 20px 0;
@@ -1445,10 +1445,6 @@ p {
   padding: 0;
 }
 
-#about-us .container {
-  // padding-top: 110px;
-}
-
 @media (max-width: 992px) {
   #about-us .container {
     padding-top: 98px;
@@ -1615,4 +1611,8 @@ p {
     height: 340px;
   }
 
+}
+
+.carousel .slick-track .slide img{
+  margin: auto;
 }
